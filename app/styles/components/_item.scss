@@ -1,0 +1,41 @@
+.item-header {
+    background: #f0efd1; /* Old browsers */
+    background: linear-gradient(to right,  #f0efd1 0%,#c7c7a5 100%); /* W3C */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0efd1', endColorstr='#c7c7a5',GradientType=1 ); /* IE6-9 */
+    padding: 10px 20px;
+    position: relative;
+
+    h5 {
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .triangle {
+        @include triangle(5px);
+        right: 20px;
+        top: 24px;
+        position: absolute;
+    }
+}
+
+.item-content {
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.25);
+    padding-top: 20px;
+
+    .row {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.item-image {
+    width: 80%;
+
+    @media (min-width: $screen-md-min) {
+        width: 100%;
+    }
+}

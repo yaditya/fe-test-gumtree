@@ -1,0 +1,19 @@
+.link {
+	color: $primary-green;
+	cursor: pointer;
+	margin: 0 10px;
+	text-decoration: underline;
+}
+
+.bottom-pagination {
+	border-top: solid 1px #e6e7df;
+	padding: 15px 0;
+
+	&.row {
+		margin: 0;
+	}
+
+	.triangle {
+		@include triangle(10px);
+	}
+}
