@@ -10,7 +10,7 @@ class ContentItem extends Component {
         let thumbnail;
 
         if (item.thumbnail && item.thumbnail !== '') {
-            thumbnail = <img className="item-image" src={`../../images/${item.thumbnail}`} alt={item.title} />;
+            thumbnail = <img className="item-image" src={`./images/${item.thumbnail}`} alt={item.title} />;
         }
 
         return (
